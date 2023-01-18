@@ -14,7 +14,9 @@
     "wdio": "wdio run wdio.conf.js",
     "test": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js",
     "login": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js --spec .\\test\\specs\\login.spec.js",
+    "login2": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js --spec .\\test\\specs\\login2.spec.js",
     "clients": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js --spec .\\test\\specs\\clients.spec.js",
+    "clientsSearch": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js --spec .\\test\\specs\\clientsSearch.spec.js",
     "ex": ".\\node_modules\\.bin\\wdio .\\wdio.conf.js --spec .\\test\\specs\\example.e2e.js"
   }
 }
