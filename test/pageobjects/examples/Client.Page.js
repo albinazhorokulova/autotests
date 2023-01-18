@@ -22,27 +22,33 @@ class ClientPage {
     get childGenderSelectOption() { return $('//mat-option/span[contains(text(),"М")]')}
     get addChild() { return this.childsModalPage.$('//mat-dialog-actions/button[contains(text(),"Сохранить")]')}
 
-    get openSearch() {return $('form.search-form')}
-    // get childSelect() {return $('app-client-child-filter div.age')}
+    get openSearch() {return $('form.search-form input')}
+    get ageSelect() { return $('app-client-age-filter div.age')}
+    get genderSelect() { return $('app-client-sex-filter div.gender')}
+
+    //#region 
+    get ageAllOption() {return $('app-client-age-filter div[class="option-wrap"] div:first-child')}
+    get age18To23Option() {return $('app-client-age-filter div[class="option-wrap"] div:first-child')}
+    get age24To31Option() {return $('app-client-age-filter div[class="option-wrap"] div:first-child')}
+
+    //#endregion
+
+    get childSelect() {return $('app-client-child-filter div.age')}
     
-    //  //#region 
-    //  get childAllOption() {return $('app-client-child-filter div[class="option-wrap"] div:all-child')}
-    //  get childYesOption() {return $('app-client-child-filter div[class="option-wrap"] div:have-child')}
-    //  get childNoOption() {return $('app-client-child-filter div[class="option-wrap"] div:haveno-child')}
-    //  get childRangeOption() {return $('option age range-double select')}
-    //  //get childRangeOption() {return $('app-client-child-filter div[class="option-wrap"] div:age-child')}
-    //  //#endregion
+     //#region 
+     get childAllOption() {return $('app-client-child-filter div[class="option-wrap"]')}
+     get childYesOption() {return $('app-client-child-filter div[class="option-wrap"]')}
+     get childNoOption() {return $('app-client-child-filter div[class="option-wrap"]')}
+     //#endregion
     
      get ccSelect() {return $('app-client-total-check-filter div.ac')}
     
      //#region 
-     get ccAllOption() {return $('app-client-total-check-filter div[class="option-wrap"] div:first-cc')}
-     get ccUpTo5000Option() {return $('app-client-total-check-filter div[class="option-wrap"] div:second-cc')}
-     get cc5001To15000Option() {return $('app-client-total-check-filter div[class="option-wrap"] div:third-cc')}
-     get cc15001To50000Option() {return $('app-client-total-check-filter div[class="option-wrap"] div:fourth-cc')}
-     get cc150001PlusOption() {return $('app-client-total-check-filter div[class="option-wrap"] div:fifth-cc')}
-     get ccRangeOption() {return $('option age range-double select')}
-     //get childRangeOption() {return $('app-client-child-filter div[class="option-wrap"] div:age-child')}
+     get ccAllOption() {return $('app-client-total-check-filter div[class="option ac all select"]')}
+     get ccUpTo5000Option() {return $('app-client-total-check-filter div[class="option ac identified"]')}
+     get cc5001To15000Option() {return $('app-client-total-check-filter div[class="option ac identified"]')}
+     get cc15001To50000Option() {return $('app-client-total-check-filter div[class="option ac identified"]')}
+     get cc150001PlusOption() {return $('app-client-total-check-filter div[class="option ac maximum"]')}
      //#endregion
  
 
